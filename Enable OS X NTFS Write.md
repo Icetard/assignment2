@@ -27,7 +27,7 @@ Mac对NTFS「写」的支持的支持早已有之，所以网上教程也不少�
 
 	/dev/disk0 (internal, physical):
     #:                       TYPE           NAME                    SIZE       IDENTIFIER
-    0:      GUID_partition_scheme    			           *121.3 GB   disk0
+    0:      GUID_partition_scheme                                  *121.3 GB   disk0
     1:                        EFI           EFI                    209.7 MB    disk0s1
     2:                  Apple_HFS         Macintosh HD             88.0 GB     disk0s2
     3:                 Apple_Boot         Recovery HD              650.0 MB    disk0s3
