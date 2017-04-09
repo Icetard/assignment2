@@ -25,7 +25,7 @@ Mac对NTFS「写」的支持的支持早已有之，所以网上教程也不少�
 
 应该是这个样子的  
 
-	/dev/disk0 (internal, physical):
+    /dev/disk0 (internal, physical):
     #:                       TYPE           NAME                    SIZE       IDENTIFIER
     0:      GUID_partition_scheme                                  *121.3 GB   disk0
     1:                        EFI           EFI                    209.7 MB    disk0s1
@@ -50,7 +50,7 @@ Mac对NTFS「写」的支持的支持早已有之，所以网上教程也不少�
 `LABEL=PartName ntfs rw,auto,nobrowse`  
  或  
 `UUID=UUIDcode ntfs rw,auto,nobrowse`  
-![edit fstab](./nano.jpg)
+![edit fstab](./img/nano.jpg)
 
 > PartName就是上面NTFS分区的NAME，
 > UUIDcode是分区的UUID号码，在「实用工具」的**系统信息**里面可以找到，直接CMD+C复制即可[因为有的硬盘是SATA有的是NVME的，所在位置会有所差异]
@@ -75,12 +75,12 @@ Mac对NTFS「写」的支持的支持早已有之，所以网上教程也不少�
 通过借助于「睡眠」实现快速开机，即便是HDD也可以进入10秒，
 这样的问题在于上一次开机时的Windows数据会缓存到`hiberfil.sys`文件里，Mac以及一些其他UNIX系统会认为贸然开启写分区功能是危险的，所以刚刚会失败，解决方法很直接    
 
-![hiberfil ](./2.jpg)
+![hiberfil ](./img/2.jpg)
 
 > 把`hiberfil.sys`文件搞掉就可以了
 
 一开始我想直接在「电源选项」里关闭「睡眠」和「快速启动」就完事了，
-但这仅仅是关闭了睡眠的入口，实际上并没没有干掉`hiberfil.sys`文件  
+但这仅仅是关闭了睡眠的入口，实际上并没没有干掉`hiberfil.sys`文件  
 
 最后的解决办法是
 进入Windows  
