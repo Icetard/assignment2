@@ -27,11 +27,11 @@ Mac对NTFS「写」的支持的支持早已有之，所以网上教程也不少�
 
 	/dev/disk0 (internal, physical):
     #:                       TYPE           NAME                    SIZE       IDENTIFIER
-    0:      GUID_partition_scheme                        *121.3 GB   disk0
-    1:                        EFI              EFI                     209.7 MB   disk0s1
-    2:                  Apple_HFS       Macintosh HD            88.0 GB    disk0s2
-    3:                 Apple_Boot        Recovery HD             650.0 MB   disk0s3
-    4:       Microsoft Basic Data   BOOTCAMP                32.5 GB    disk0s4
+    0:      GUID_partition_scheme    			           *121.3 GB   disk0
+    1:                        EFI           EFI                    209.7 MB    disk0s1
+    2:                  Apple_HFS         Macintosh HD             88.0 GB     disk0s2
+    3:                 Apple_Boot         Recovery HD              650.0 MB    disk0s3
+    4:       Microsoft Basic Data         BOOTCAMP                 32.5 GB     disk0s4
 
 其中 TYPE 为 Microsoft Basic Data 的便是NTFS分区，  
 
@@ -80,7 +80,8 @@ Mac对NTFS「写」的支持的支持早已有之，所以网上教程也不少�
 > 把`hiberfil.sys`文件搞掉就可以了
 
 一开始我想直接在「电源选项」里关闭「睡眠」和「快速启动」就完事了，
-但实际上这样并没没有干掉`hiberfil.sys`文件，
+但这仅仅是关闭了睡眠的入口，实际上并没没有干掉`hiberfil.sys`文件  
+
 最后的解决办法是
 进入Windows  
 
